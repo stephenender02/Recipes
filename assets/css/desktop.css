@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #FF8040;
+    --primary-color-darker: #fc6519;
+    --primary-color-darkest: #ff5500;
+    --primary-color-lighter: #fc9d6d;
+    --primary-color-lightest: #f7bc9f;
+
+    --accent-color-one: #01833c;
+    --accent-color-one-darker: #014a22;
+    --accent-color-one-lighter: #00ba54;
+
+    --accent-color-two: #4cb4dc;
+    --accent-color-two-darker: #0087bc;
+    --accent-color-two-lighter: #7ec8e6;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-color-lighter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logomark {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logomark img {
+    height: 100px;
+    margin-left: 2%;
+}
+
+.logomark h1 {
+    color: black;
+    font-size: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+nav a, nav li {
+    list-style-type: none;
+    color: black;
+    font-size: 2rem;
+}
+
+nav a, nav li:hover {
+    color: var(--accent-color-one);
+}
+
+.selectAccount {
+    background-color: var(--accent-color-one);
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--accent-color-one);
+}
+
+.selectAccount li {
+    color: white;
+}
+
+.selectAccount:hover {
+    background-color: var(--accent-color-one-darker);
+    color: var(--accent-color-one-darker);
+}
+
+.selectAccount li:hover {
+    color: white;
+}
+
+/* Hero section */
+
+.hero {
+    width: 100%;
+}
+
+.hero video {
+    width: 100%;
+    filter: brightness(60%)
+}
+
+.heroText {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 1;
+}
+
+.heroText h1 {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+.heroText h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.heroText a, .heroText li{
+    list-style-type: none;
+    color: black;
+    font-size: 2rem;
+}
+
+/* OTHER SECTIONS */
+
+
+/* Footer */
+
+footer {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    background-color: #4f4f4f7c;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.portfolio {
+    margin-left: 2%;
+    display: flex;
+    gap: 2rem;
+}
+
+.portfolio li {
+    color: black;
+    background-color: var(--accent-color-two);
+    list-style-type: none;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.portfolio li:hover {
+    background-color: var(--accent-color-two-darker);
+    color: white;
+}
+
+.portfolio img {
+    width: 4rem;
+}
+
+.copyright {
+    margin-right: 2%;
+    font-size: 1.25rem;
+}
